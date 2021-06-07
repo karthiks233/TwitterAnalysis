@@ -1,2 +1,2 @@
 # TwitterAnalysis
-Analyzing tweets based on #Spirituality and #Yoga
+Analyzing tweets based on (hashtag) #Value
