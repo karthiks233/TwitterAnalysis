@@ -7,8 +7,8 @@ import tweepy
 import re
 import pandas as pd
 import nltk
-# nltk.download('stopwords')
-# nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk import FreqDist
@@ -114,7 +114,7 @@ def search_for_hashtags(consumer_key, consumer_secret, access_token, access_toke
         # w.writerow(['tweet_text', 'username', 'all_hashtags', 'followers_count'])
         # for each tweet matching our hashtags, write relevant info to the spreadsheet
         for tweet in tweepy.Cursor(api.search, q=hashtag_phrase + ' -filter:retweets',
-                                   lang="en", tweet_mode='extended').items(100):
+                                   lang="en", tweet_mode='extended').items(500):
             longitude = None
             latitude = None
             if tweet.coordinates:
