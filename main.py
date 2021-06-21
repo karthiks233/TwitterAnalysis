@@ -407,7 +407,7 @@ def dashapp(list2):
 
 
     if __name__ == '__main__':
-        app.run_server()
+        app.run_server(host='0.0.0.0')
 
 
 dashapp(search_for_hashtags("uiJXzxgVIsmQL43M3pbId4Lt1", "PHoV0Rcgo8g7WNvqx5xrW0gsPgtSDzjgFzhL5FZ1JVMHpvg6IW",
